@@ -33,6 +33,7 @@ OCaml does not do any implicit casting.
 
 # Higher-Order Functions & Currying
 
+```ocaml
 let plus_two = sum 2;;
 
 val plus_two : int -> int = <fun>
@@ -40,11 +41,13 @@ val plus_two : int -> int = <fun>
 plus_two 3;;
 
 int = 5
+```
 
 ---
 
 # Lists and Pattern-matching
 
+```ocaml
 let numbers = [1; 2; 3; 4; 5; 6; 7; 8; 9; 10];;
 
 val numbers : int list = [1; 2; 3; 4; 5; 6; 7; 8; 9; 10]
@@ -63,6 +66,7 @@ let rec odds l =
         h :: odds t
       else
         odds t;;
+```
 
 Exhaustivity checker - try removing the empty case.
 
@@ -70,6 +74,7 @@ Exhaustivity checker - try removing the empty case.
 
 # Records
 
+```ocaml
 type connection =
   { protocol         : string;
     source_ip        : string;
@@ -85,11 +90,13 @@ let my_connection =
     destination_ip = "4.3.2.1"; 
     destination_port = 80 
   };;
+```
 
 ---
 
 # Modules
 
+```ocaml
 module Hello : sig
  val hello : unit -> unit
 end = 
@@ -108,6 +115,7 @@ Common example in the stand library of a module is the List module:
 
 List.fold_left
 List.fold_right
+```
 
 https://caml.inria.fr/pub/docs/manual-ocaml/libref/List.html
 
@@ -117,10 +125,12 @@ https://caml.inria.fr/pub/docs/manual-ocaml/libref/List.html
 
 Modules that are parameterized by other modules.
 
-# module Int_set = Set.Make (struct
-                               type t = int
-                               let compare = compare
-                             end);;
+```ocaml
+module Int_set = Set.Make (struct
+                              type t = int
+                              let compare = compare
+                            end);;
+```
 
 ---
 
@@ -142,6 +152,7 @@ https://reasonml.github.io/
 
 type schoolPerson = Teacher | Director | Student(string);
 
+```reasonml
 let greeting = person =>
   switch (person) {
   | Teacher => "Hey Professor!"
@@ -149,6 +160,7 @@ let greeting = person =>
   | Student("Richard") => "Still here Ricky?"
   | Student(anyOtherName) => "Hey, " ++ anyOtherName ++ "."
   };
+```
 
 ---
 
@@ -156,6 +168,7 @@ let greeting = person =>
 
 https://reasonml.github.io/reason-react/
 
+```reasonml
 let component = ReasonReact.statelessComponent("Greeting");
 
 let make = (~name, _children) => {
@@ -165,3 +178,4 @@ let make = (~name, _children) => {
       {ReasonReact.string("Hello!")}
     </button>
 };
+```
