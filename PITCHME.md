@@ -9,6 +9,8 @@ From Wikipedia:
 
 "Among HM's more notable properties are its completeness and its ability to infer the most general type of a given program without programmer-supplied type annotations or other hints. Algorithm W is an efficient type inference method that performs in almost linear time with respect to the size of the source, making it practically useful to type large programs."
 
+Compiles to native code or byte code that can be interpreted.
+
 ---
 
 # Functions
@@ -60,6 +62,8 @@ let rec odds l =
       else
         odds t;;
 
+Exhaustivity checker - try removing the empty case.
+
 ---
 
 # Records
@@ -79,3 +83,83 @@ let my_connection =
     destination_ip = "4.3.2.1"; 
     destination_port = 80 
   };;
+
+--
+
+# Modules
+
+module Hello : sig
+ val hello : unit -> unit
+end = 
+struct
+  let message = "Hello"
+  let hello () = print_endline message
+end
+  
+(* At this point, Hello.message is not accessible anymore. *)
+let goodbye () = print_endline "Goodbye"
+let hello_goodbye () =
+  Hello.hello ();
+  goodbye ()
+
+Common example in the stand library of a module is the List module:
+
+List.fold_left
+List.fold_right
+
+https://caml.inria.fr/pub/docs/manual-ocaml/libref/List.html
+
+--
+
+# Functors
+
+Modules that are parameterized by other modules.
+
+# module Int_set = Set.Make (struct
+                               type t = int
+                               let compare = compare
+                             end);;
+
+--
+
+# Meta-circular interpreter
+
+https://github.com/cs51/project-seanbollin/blob/master/expr.ml
+https://github.com/cs51/project-seanbollin/blob/master/evaluation.ml
+https://llvm.org/docs/tutorial/OCamlLangImpl1.html
+
+Many find OCaml a great language for academia and writing compilers. As to why
+it is good for writing compilers people mention that it expressively matches the compiling
+process.
+
+--
+
+# ReasonML
+
+https://reasonml.github.io/
+
+type schoolPerson = Teacher | Director | Student(string);
+
+let greeting = person =>
+  switch (person) {
+  | Teacher => "Hey Professor!"
+  | Director => "Hello Director."
+  | Student("Richard") => "Still here Ricky?"
+  | Student(anyOtherName) => "Hey, " ++ anyOtherName ++ "."
+  };
+
+--
+
+# ReasonReact
+
+https://reasonml.github.io/reason-react/
+
+let component = ReasonReact.statelessComponent("Greeting");
+
+let make = (~name, _children) => {
+  ...component,
+  render: _self =>
+    <button>
+      {ReasonReact.string("Hello!")}
+    </button>
+};
