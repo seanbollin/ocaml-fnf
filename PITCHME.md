@@ -152,7 +152,7 @@ https://reasonml.github.io/
 
 type schoolPerson = Teacher | Director | Student(string);
 
-```reasonml
+```ocaml
 let greeting = person =>
   switch (person) {
   | Teacher => "Hey Professor!"
@@ -168,7 +168,7 @@ let greeting = person =>
 
 https://reasonml.github.io/reason-react/
 
-```reasonml
+```ocaml
 let component = ReasonReact.statelessComponent("Greeting");
 
 let make = (~name, _children) => {
