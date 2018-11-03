@@ -37,6 +37,8 @@ plus_two 3;;
 
 int = 5
 
+---
+
 # Lists and Pattern-matching
 
 let numbers = [1; 2; 3; 4; 5; 6; 7; 8; 9; 10];;
@@ -57,6 +59,8 @@ let rec odds l =
         h :: odds t
       else
         odds t;;
+
+---
 
 # Records
 
