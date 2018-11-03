@@ -15,6 +15,7 @@ Compiles to native code or byte code that can be interpreted.
 
 # Functions
 
+```ocaml
 let sum a b = a +. b;;
 
 val sum : float -> float -> float = <fun>
@@ -22,6 +23,7 @@ val sum : float -> float -> float = <fun>
 let sum a b = a + b;;
 
 val sum : int -> int -> int = <fun>
+```
 
 OCaml is a strongly statically typed language that uses type inference to work out types so you don't have to.
 
