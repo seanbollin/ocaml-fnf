@@ -84,7 +84,7 @@ let my_connection =
     destination_port = 80 
   };;
 
---
+---
 
 # Modules
 
@@ -109,7 +109,7 @@ List.fold_right
 
 https://caml.inria.fr/pub/docs/manual-ocaml/libref/List.html
 
---
+---
 
 # Functors
 
@@ -120,7 +120,7 @@ Modules that are parameterized by other modules.
                                let compare = compare
                              end);;
 
---
+---
 
 # Meta-circular interpreter
 
@@ -132,7 +132,7 @@ Many find OCaml a great language for academia and writing compilers. As to why
 it is good for writing compilers people mention that it expressively matches the compiling
 process.
 
---
+---
 
 # ReasonML
 
@@ -148,7 +148,7 @@ let greeting = person =>
   | Student(anyOtherName) => "Hey, " ++ anyOtherName ++ "."
   };
 
---
+---
 
 # ReasonReact
 
