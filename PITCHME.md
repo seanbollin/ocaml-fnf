@@ -160,25 +160,14 @@ let has_even_leaf tree =
 
 ---
 
-### Meta-circular interpreter
-
-https://github.com/cs51/project-seanbollin/blob/master/expr.ml
-https://github.com/cs51/project-seanbollin/blob/master/evaluation.ml
-https://llvm.org/docs/tutorial/OCamlLangImpl1.html
-
-Many find OCaml a great language for academia and writing compilers. As to why
-it is good for writing compilers people mention that it expressively matches the compiling
-process.
-
----
-
 ### ReasonML
 
 https://reasonml.github.io/
 
+```ocaml
+
 type schoolPerson = Teacher | Director | Student(string);
 
-```ocaml
 let greeting = person =>
   switch (person) {
   | Teacher => "Hey Professor!"
