@@ -31,7 +31,7 @@ OCaml does not do any implicit casting.
 
 ---
 
-# Higher-Order Functions & Currying
+### Higher-Order Functions & Currying
 
 ```ocaml
 let plus_two = sum 2;;
@@ -66,6 +66,9 @@ let rec odds l =
         h :: odds t
       else
         odds t;;
+
+let rec fib x = if x <= 1 then 1 else fib (x - 1) + fib (x - 2);;
+
 ```
 
 Exhaustivity checker - try removing the empty case.
