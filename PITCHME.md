@@ -1,7 +1,9 @@
 ![OCaml](http://connachtspringshow.com/wp-content/uploads/2018/04/camel-945x627.jpg
  "OCaml")
 
-# Programming language ML and the Hindley-Milner type system
+---
+
+### Programming language ML and the Hindley-Milner type system
 
 ML influenced Clojure, Coq, Cyclone, C++, Elm, F#, F*, Haskell, Idris, Miranda, Nemerle, OCaml, Opa, Erlang, Rust, Scala.
 
@@ -13,7 +15,7 @@ Compiles to native code or byte code that can be interpreted.
 
 ---
 
-# Functions
+### Functions
 
 ```ocaml
 let sum a b = a +. b;;
@@ -45,7 +47,7 @@ int = 5
 
 ---
 
-# Lists and Pattern-matching
+### Lists and Pattern-matching
 
 ```ocaml
 let numbers = [1; 2; 3; 4; 5; 6; 7; 8; 9; 10];;
@@ -75,7 +77,7 @@ Exhaustivity checker - try removing the empty case.
 
 ---
 
-# Records
+### Records
 
 ```ocaml
 type connection =
@@ -97,7 +99,7 @@ let my_connection =
 
 ---
 
-# Modules
+### Modules
 
 ```ocaml
 module Hello : sig
@@ -124,7 +126,7 @@ https://caml.inria.fr/pub/docs/manual-ocaml/libref/List.html
 
 ---
 
-# Functors
+### Functors
 
 Modules that are parameterized by other modules.
 
@@ -137,7 +139,7 @@ module Int_set = Set.Make (struct
 
 ---
 
-# Binary Trees
+### Binary Trees
 
 ```ocaml
 (* Binary tree with leaves car­rying an integer. *)
@@ -158,7 +160,7 @@ let has_even_leaf tree =
 
 ---
 
-# Meta-circular interpreter
+### Meta-circular interpreter
 
 https://github.com/cs51/project-seanbollin/blob/master/expr.ml
 https://github.com/cs51/project-seanbollin/blob/master/evaluation.ml
@@ -170,7 +172,7 @@ process.
 
 ---
 
-# ReasonML
+### ReasonML
 
 https://reasonml.github.io/
 
@@ -188,7 +190,7 @@ let greeting = person =>
 
 ---
 
-# ReasonReact
+### ReasonReact
 
 https://reasonml.github.io/reason-react/
 
