@@ -5,13 +5,13 @@
 
 ### Programming language ML and the Hindley-Milner type system
 
-ML influenced Clojure, Coq, Cyclone, C++, Elm, F#, F*, Haskell, Idris, Miranda, Nemerle, OCaml, Opa, Erlang, Rust, Scala.
+<p>ML influenced Clojure, Coq, Cyclone, C++, Elm, F#, F*, Haskell, Idris, Miranda, Nemerle, OCaml, Opa, Erlang, Rust, Scala.</p>
 
-From Wikipedia:
+<p>From Wikipedia:</p>
 
-"Among HM's more notable properties are its completeness and its ability to infer the most general type of a given program without programmer-supplied type annotations or other hints. Algorithm W is an efficient type inference method that performs in almost linear time with respect to the size of the source, making it practically useful to type large programs."
+<p>"Among HM's more notable properties are its completeness and its ability to infer the most general type of a given program without programmer-supplied type annotations or other hints. Algorithm W is an efficient type inference method that performs in almost linear time with respect to the size of the source, making it practically useful to type large programs."</p>
 
-Compiles to native code or byte code that can be interpreted.
+<p>Compiles to native code or byte code that can be interpreted.</p>
 
 ---
 
