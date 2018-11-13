@@ -1,6 +1,5 @@
-
----?image=http://connachtspringshow.com/wp-content/uploads/2018/04/camel-945x627.jpg&size=auto 50%&color=#CCDAE7
-
+![OCaml](http://connachtspringshow.com/wp-content/uploads/2018/04/camel-945x627.jpg
+ "OCaml")
 
 ---
 
