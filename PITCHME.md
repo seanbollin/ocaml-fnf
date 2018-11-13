@@ -5,13 +5,13 @@
 
 ### Programming language ML and the Hindley-Milner type system
 
-<p>ML influenced Clojure, Coq, Cyclone, C++, Elm, F#, F*, Haskell, Idris, Miranda, Nemerle, OCaml, Opa, Erlang, Rust, Scala.</p>
+<p style="font-size: 32px;">ML influenced Clojure, Coq, Cyclone, C++, Elm, F#, F*, Haskell, Idris, Miranda, Nemerle, OCaml, Opa, Erlang, Rust, Scala.</p>
 
-<p>From Wikipedia:</p>
+<p style="font-size: 32px;">From Wikipedia:</p>
 
-<p>"Among HM's more notable properties are its completeness and its ability to infer the most general type of a given program without programmer-supplied type annotations or other hints. Algorithm W is an efficient type inference method that performs in almost linear time with respect to the size of the source, making it practically useful to type large programs."</p>
+<p style="font-size: 32px;">"Among HM's more notable properties are its completeness and its ability to infer the most general type of a given program without programmer-supplied type annotations or other hints. Algorithm W is an efficient type inference method that performs in almost linear time with respect to the size of the source, making it practically useful to type large programs."</p>
 
-<p>Compiles to native code or byte code that can be interpreted.</p>
+<p style="font-size: 32px;">Compiles to native code or byte code that can be interpreted.</p>
 
 ---
 
@@ -27,9 +27,9 @@ let sum a b = a + b;;
 val sum : int -> int -> int = <fun>
 ```
 
-OCaml is a strongly statically typed language that uses type inference to work out types so you don't have to.
+<p style="font-size: 32px;">OCaml is a strongly statically typed language that uses type inference to work out types so you don't have to.</p>
 
-OCaml does not do any implicit casting.
+<p style="font-size: 32px;">OCaml does not do any implicit casting.</p>
 
 ---
 
@@ -73,7 +73,7 @@ let rec fib x = if x <= 1 then 1 else fib (x - 1) + fib (x - 2);;
 
 ```
 
-Exhaustivity checker - try removing the empty case.
+<p style="font-size: 32px;">Exhaustivity checker - try removing the empty case.</p>
 
 ---
 
@@ -128,7 +128,7 @@ https://caml.inria.fr/pub/docs/manual-ocaml/libref/List.html
 
 ### Functors
 
-Modules that are parameterized by other modules.
+<p style="font-size: 32px;">Modules that are parameterized by other modules.</p>
 
 ```ocaml
 module Int_set = Set.Make (struct
